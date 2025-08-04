@@ -1,0 +1,7 @@
+<h2>Регистрация</h2>
+<form method="post" action="/api/accounts/register/">
+    {% csrf_token %}
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="password" name="password" placeholder="Пароль" required><br>
+    <button type="submit">Зарегистрироваться</button>
+</form>
