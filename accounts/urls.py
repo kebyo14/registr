@@ -3,6 +3,7 @@ from .views import RegisterView, VerifyOTPView, LogoutView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from django.views.generic import TemplateView
 
+
 urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),
     
